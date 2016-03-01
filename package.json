@@ -1,0 +1,28 @@
+{
+  "name": "node-es-latest-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "coverage": "nyc --require babel-core/register mocha ./test",
+    "lint": "eslint src/**.js test/**.js || true",
+    "build": "if (eslint src/**.js test/**.jspm ) ; then (babel ./src -d dist) ; fi",
+    "test": "mocha --require babel-core/register ./test",
+    "run": "babel-node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.5.2",
+    "babel-eslint": "^5.0.0",
+    "babel-preset-node5": "^10.6.0",
+    "chai": "^3.5.0",
+    "eslint": "^2.2.0",
+    "mocha": "^2.4.5",
+    "nyc": "^5.6.0"
+  },
+  "dependencies": {
+    "q": "^1.4.1"
+  }
+}
