@@ -1,0 +1,1 @@
+# node-es-latest-template
