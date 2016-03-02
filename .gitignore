@@ -40,3 +40,6 @@ node_modules
 
 #es6 build dir
 dist/**/*.*
+
+#typings if someone wants to use they can don't check in
+typings/

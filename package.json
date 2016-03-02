@@ -6,7 +6,7 @@
   "scripts": {
     "coverage": "nyc --require babel-core/register mocha ./test",
     "lint": "eslint src/**.js test/**.js || true",
-    "build": "if (eslint src/**.js test/**.jspm ) ; then (babel ./src -d dist) ; fi",
+    "build": "(eslint src/**.js test/**.jspm ) && (babel ./src -d dist)",
     "test": "mocha --require babel-core/register ./test",
     "run": "babel-node src/index.js"
   },

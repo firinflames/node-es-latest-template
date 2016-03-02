@@ -1,4 +1,4 @@
-import Q from 'q';
+import * as Q from 'q';
 
 export default class ExampleClass
 {
@@ -8,7 +8,7 @@ export default class ExampleClass
     }
 
     method(){
-    
+        
         console.log('got here');
         return 11;
     }
