@@ -35,6 +35,8 @@ node_modules
 #nyc coverage results
 .nyc_output
 
-
+#apple crap
 .DS_Store
+
+#es6 build dir
 dist/**/*.*
