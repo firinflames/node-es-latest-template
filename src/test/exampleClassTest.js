@@ -1,13 +1,11 @@
-import ExampleClass from '../src/ExampleClass';
-import chai from 'chai';
+import ExampleClass from '../ExampleClass';
+import * as chai from 'chai';
 
 let expect = chai.expect;
 chai.config.includeStack = true;
 
-
 describe('Hello World', () => {
-
-
+   
     it('Async method test catching error', (done) => {(async (done) => {
         var test = new ExampleClass();
         
@@ -23,6 +21,7 @@ describe('Hello World', () => {
         var test = new ExampleClass();
         
         let res = test.method();
+
         expect(res).to.equal(11);
         done();    
 

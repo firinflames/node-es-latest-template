@@ -1,5 +1,6 @@
 {
   "presets": [
     "node5"
-  ]
+  ],
+  sourceMaps: "inline"
 }

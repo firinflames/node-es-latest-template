@@ -2,13 +2,13 @@
   "name": "node-es-latest-template",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "coverage": "nyc --require babel-core/register mocha ./test",
     "lint": "eslint src/**.js test/**.js || true",
     "build": "(eslint src/**.js test/**.jspm ) && (babel ./src -d dist)",
-    "test": "mocha --require babel-core/register ./test",
-    "run": "babel-node src/index.js"
+    "test": "mocha --require babel-core/register ./src/test",
+    "start": "babel-node ./src/index.js"
   },
   "author": "",
   "license": "ISC",

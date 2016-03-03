@@ -8,7 +8,6 @@ export default class ExampleClass
     }
 
     method(){
-        
         console.log('got here');
         return 11;
     }
